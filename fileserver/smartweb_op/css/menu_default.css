@@ -1,0 +1,206 @@
+/* Style Chung cho toàn menu */
+#elife-menu ul{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	list-style-position:outside;
+	position:relative;
+	z-index:100;
+	border:none;
+}
+#elife-menu > ul > li{		
+	/*font-weight: bold;	*/
+}
+#elife-menu > ul > li > ul > li{		
+	font-weight: normal;	
+}
+#elife-menu > ul > li > ul > li > ul > li{		
+	font-weight: normal;	
+}
+#elife-menu a{
+	display:block;
+	padding:10px 0px 0px 0px;          /* Padding tất cả a */
+	color:#33434c;               /* Màu link */
+	text-decoration:none;
+	/*width:100%;*/               /* Chiều rộng tất cả a */
+	height:27px;              /* Chiều Cao tất cả a */
+	font-size:1.1em;
+}
+#elife-menu ul > li:hover > a
+{		
+	color:#2274ac;
+	/*background:url(../image/hover-menu-new.png) center no-repeat;)*/	
+	/*border-right: 1px solid #ccc;
+	
+	/*-webkit-box-shadow: 0 0 4px rgba(0%,0%,0%,0.4);
+	-moz-box-shadow: 0 0 4px rgba(0%,0%,0%,0.4);
+	-ms-box-shadow: 0 0 4px rgba(0%,0%,0%,0.4);
+	box-shadow: 0 0 4px rgba(0%,0%,0%,0.4);*/
+	height:25px;
+	z-index:600;
+	position:relative;	
+	
+}
+#elife-menu > ul > li > a{
+	font-weight: bold;
+	color : #242424;	
+	text-shadow: 1px 1px #fff;
+}
+
+#elife-menu ul > li > ul > li:hover > a{
+	color:#000;
+	background-color:#22b431 !important;
+}
+
+#elife-menu ul > li > ul > li > ul > li:hover > a{
+	color:#000;
+	background-color:#22b431 !important;
+}
+
+#elife-menu ul > li > a{
+	/*background: #fff;*/	
+	
+}
+#elife-menu ul ul li a{
+	background:none !important;
+	border-bottom:1px solid #ccc;
+	height: 25px;
+	width: 265px;
+	margin: 0 auto;
+	padding-left: 10px;
+	
+	transition: background .25s ease-in-out;
+   -moz-transition: background .25s ease-in-out;
+   -webkit-transition: background .25s ease-in-out;
+}
+#elife-menu ul ul li:last-child{
+	border-bottom:0px;
+	width:290px !important;
+}
+#elife-menu ul > li > ul > li:last-child > a{
+	border-bottom:0px;
+}
+#elife-menu ul ul li:first-child{
+	margin-top:10px;
+}
+#elife-menu  ul  ul  li:hover a{
+	
+	
+}
+#layout_default #elife-menu li a.active
+{  	
+	color:#2274ac !important;	
+	font-weight:550;
+	margin-top:1px;	
+}
+
+#elife-menu li a.active
+{  /* CSS cho Menu Active */	
+	color:#fff !important;	
+	font-weight:550;
+	margin-top:1px;
+	/*background:url(../image/hover-menu-new.png) center no-repeat;)
+	
+	/*border-bottom:2px solid #9923c7;*/
+}
+
+
+#elife-menu li{
+	float:left;
+	position:relative;
+	/*background:#309  top center repeat-x;*/  /* Background Tất cả menu */
+	text-align:center;
+	border-right: 0px solid #828080;
+	width:100px;                                 /* Chiều rộng tất cả li */
+	height:37px;                                 /* Chiều cao tất cả li */
+}
+
+#elife-menu li:hover{
+	/*background:#000  top center repeat-x;*/	/* Background Tất cả menu hover */	
+}
+
+/* Cap 1 Style */
+#elife-menu ul li {
+	float:left;
+	position:relative;
+	/*background:#000  repeat-x;*/ /* Background Menu Cấp 1 */
+	width:80px;
+}
+#elife-menu > ul > li:nth-child(4),
+#elife-menu > ul > li:nth-child(3),
+#elife-menu > ul > li:nth-child(5){
+	width:140px;
+}
+#elife-menu ul li:last-child{
+	width:135px;
+}
+
+#elife-menu ul li:hover {
+	/*background:#333  repeat-x; /* Background Menu Cấp 1 Hover */
+	/*font-style:italic;*/
+	color:#fff !important;	
+	
+	
+}
+
+/* Cap 2 Style */
+#elife-menu ul ul {
+	position:absolute;
+	display:none;
+	top: 30px;   /* = chiều cao của 1 li */
+	z-index: 1;	
+	left: -65px;
+	width: 295px;
+	background: #FFF;
+	-webkit-box-shadow: 0 0 4px #ffcbdb;
+	-moz-box-shadow: 0 0 4px #ffcbdb;
+	-ms-box-shadow: 0 0 #ffcbdb;
+	box-shadow: 0 0 4px #ffcbdb;
+
+}
+
+#elife-menu ul ul li{
+	background:none ;/* Background Menu Cấp 2 */
+	/*background: #000;*/
+	width:290px;    
+	text-align:left;
+}
+
+#elife-menu ul ul ul li a{
+	background: none !important;
+}
+#elife-menu > ul > ul > ul > li:hover a{
+	background: none !important;
+}
+
+#elife-menu ul ul li a{
+	   
+}
+
+#elife-menu ul ul li:hover{
+/*	background:url(../image/bg-child-nav.png) repeat; /* Background Menu Cấp 2 Hover */
+}
+
+/* Cap 3 Style */
+#elife-menu ul ul ul{
+	position:absolute;
+	top:10px;
+}	
+
+#elife-menu ul li ul ul {
+	left:283px; /* = chiều rộng của li */
+	margin:0px;
+}
+
+/* Cap 2, 3, 4 */
+#elife-menu ul li:hover ul ul, 
+#elife-menu ul li:hover ul ul ul, 
+#elife-menu ul li:hover ul ul ul ul{
+	display:none;
+}
+#elife-menu ul li:hover ul, 
+#elife-menu ul li li:hover ul, 
+#elife-menu ul li li li:hover ul, 
+#elife-menu ul li li li li:hover ul{
+	display:block;
+}

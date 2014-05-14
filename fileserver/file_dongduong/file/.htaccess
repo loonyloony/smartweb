@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^resizepng([^?]*)x([^?]*)/([^?]*)/([^?]*)$ ../image.php?route=elife/image/resizepng&path=$3/$4&width=$1&height=$2 [L,QSA]
+RewriteRule ^resize([^?]*)x([^?]*)/([^?]*)/([^?]*)$ ../image.php?route=elife/image/resize&path=$3/$4&width=$1&height=$2 [L,QSA]
+RewriteRule ^autosize([^?]*)x([^?]*)/([^?]*)/([^?]*)$ ../image.php?route=elife/image/autosize&path=$3/$4&width=$1&height=$2 [L,QSA]
+RewriteRule ^fixsize([^?]*)x([^?]*)/([^?]*)/([^?]*)$ ../image.php?route=elife/image/fixsize&path=$3/$4&width=$1&height=$2 [L,QSA]

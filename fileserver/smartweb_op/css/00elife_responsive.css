@@ -1,0 +1,29 @@
+@media screen and (max-width : 768px) {
+    #elife-tet{display: none}
+    #elife-menu{float:left; display: none}
+    #layout_homepage #elife-menu {display: block}
+    #elife-menu ul li{display: block; width: 100% !important;}
+    #elife-nav-mobile {display: block}
+    #elife-logo{width: 190px; height: auto; padding-top:20px}
+}
+
+@media screen and (max-width : 840px) {
+    #elife-header-content{display: none}
+    #elife-logo{width: 220px; height: auto; padding-top:15px}
+}
+
+@media screen and (max-width : 1279px) {
+    #elife-tet{display: none}
+    #elife-menu{float:left;}
+}
+
+@media screen and (min-width : 1280px) {
+    #elife-tet{display: none}
+    #elife-menu{width: 1140px}
+}
+
+@media screen and (min-width : 1600px) {
+    #elife-tet{display: block}
+    #elife-menu{width: 1140px; margin-left: 290px}
+
+}

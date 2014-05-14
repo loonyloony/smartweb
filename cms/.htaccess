@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^images/root/([a-zA-Z0-9]*)/([^?]*)$ reimage.php?type=root&path=$1/$2 [L,QSA]
+RewriteRule ^images/([a-zA-Z0-9]*)-([0-9]*)x([0-9]*)/([a-zA-Z0-9]*)/([^?]*)$ reimage.php?type=$1&width=$2&height=$3&path=$4/$5 [L,QSA]
+RewriteRule elifeupload.jsp$ http://fileserver.elifepartners.net/component/elifeupload/index.php?&domain=http://localhost:81/smartweb/&site=edfc7f6a0fc2644009d10758efec13e0&%{QUERY_STRING} [L,QSA]

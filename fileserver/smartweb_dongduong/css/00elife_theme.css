@@ -1,0 +1,423 @@
+/* -- layout -- */
+#layout_homepage #elife-body{display:none}
+
+#subgroups .elife-section-title{
+	display:none;
+}
+#subgroups ul{
+	list-style-type:none;	
+}
+#subgroups li{
+	background:url(../image/arrow-right.png) left top no-repeat;
+	padding-left: 20px;
+	height:35px;
+}
+#subgroups li:hover{
+	padding-left:25px;
+	font-style: italic;
+}
+#subgroups a{
+	text-decoration:none;
+}
+#sub-title{
+	margin-bottom:10px;
+	font-size:1.1em;
+	font-weight:bold;
+	margin-top: 20px;
+}
+#layout_default{}
+	#layout_default #elife-menu ul li a{
+		color: #666;
+		font-size: 1em !important;
+		text-shadow: none;
+		text-decoration: none;
+	}
+	
+	#layout_default #elife-menu ul > li > ul{
+		background:#fff
+	}
+
+/* -- main menu -- */
+#search-submit-head {
+	border: none;
+	background: url(header-sprite.png) no-repeat 0 -11px transparent;
+	width: 20px;
+	height: 18px;
+	line-height: 18px;
+	float: right;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+
+#search-box-head {
+	background: transparent;
+	border: none;
+	float: left;
+	width: 108px;
+	height: 18px;
+	line-height: 18px;
+	text-align: left;
+	padding: 0 0 0 8px;
+	font-size: 11px;
+	color: #000;
+	margin: 0px;
+	outline: 0;
+	border-radius:0px;
+	padding:0px 0px 0px 2px
+}
+
+#menuSearch{
+	position: absolute;
+	right: 10px;
+	top: 6px;
+	bottom: -3px;
+	z-index: 100;
+	background: #fff;
+	background: rgba(255,255,255,0.6);
+	height: 18px;
+	width: 142px;
+	border: 1px solid rgba(255,255,255,0.4);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+}
+
+
+#elife-menu ul > li > ul{
+	background:rgba(255,255,255,0.85);
+	padding-bottom: 8px;
+}
+	#elife-menu ul > li > ul > li{
+		height:38px	;
+		padding-left: 10px;
+	}
+	#elife-menu ul > li > ul a{
+		color: #666;
+		font-size: 1em !important;
+		text-shadow: none;
+		text-decoration: none;
+		display: inline-block	
+	}
+	#elife-menu ul > li > ul a:hover{
+		border:0px;
+		color:#000 !important;
+		background-color:#cfd7d9 !important;	
+		height:25px;
+	}
+	/*.pop-img{
+		width:950px;
+		height:255px;
+		padding:5px;
+		margin-top:28px;
+		background: rgba(255,255,255,0.85);
+		display:none
+	}
+		.more-pop-img{
+			width:950px;
+			height:250px;
+			background: url(../image/26.jpg) no-repeat center center
+		}
+	#elife-menu ul > li > ul > li a:hover .pop-img{display:block !important}*/
+
+/*------header--------*/
+#elife-header{margin-top:25px}
+/*#header-content{width: 100%; background: #f1f1f1; height: 38px;}
+#hd-ct{float:right; width:625px; margin-top: 5px;}
+.bt-search{vertical-align: middle; margin-left: -40px; margin-top: -7px;}
+.search{background:#e2e2e2;}
+#layout_homepage input[type="text"]{
+	padding:4px;
+	border: 0;
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid rgba(255,255,255,.8);
+	font-size: 16px;
+	width: 180px;
+	border-radius: 17px;
+	-webkit-border-radius: 17px;
+	-moz-border-radius: 17px;
+	box-shadow: -1px -1px 2px rgba(0,0,0,.3), 0 0 1px rgba(0,0,0,.2);
+	-webkit-box-shadow: -1px -1px 2px rgba(0,0,0,.3), 0 0 1px rgba(0,0,0,.2);
+	-moz-box-shadow: -1px -1px 2px rgba(0,0,0,.3), 0 0 1px rgba(0,0,0,.2);
+}
+::-webkit-input-placeholder {
+   color: #000;
+   font-style: italic; 
+}*/
+
+#slogan{
+	position:absolute;
+	top:40px
+}
+	#slogan h2{
+		font-size:2.5em;
+		font-weight:600
+	}
+	
+#elife-header-content a{
+	font-weight:700;
+	text-decoration:none
+}
+
+#navHeader,
+#lang{margin-bottom:10px}
+
+#navHeader{
+	text-transform:uppercase;
+	font-style:normal	
+}
+	#navHeader a{padding-left:10px}
+
+/* -- footer -- */
+#footerNavLinks{
+	border-top: 6px solid #ccc;
+	padding-top:20px
+}
+
+.fBR1Grey {
+    border-right: 1px solid #CECECE;
+}
+
+.footerNavCol{
+	height: 125px;
+	width:155px;
+    padding: 0 5px 0 7px
+}
+
+.footNavTitle{
+	color: #848484;
+    font-size: 11px;
+    font-weight: bold;
+    margin: 0 0 6px	
+}
+
+.footerNavColFirst{
+	padding:0px;
+	width:220px	
+}
+
+.footerNavColSecond{
+	width:315px	
+}
+
+.footColLinks div {
+    margin-bottom: 5px;
+}
+
+.contact-infor-item {
+    padding: 3px;
+}
+
+.footerNavColLast {
+    width: 228px;
+}
+
+.footerCopy{
+	text-align:center;
+	padding:30px 0px 10px 0px	
+}
+	/* -- email -- */
+	.contact-email-title {
+		font-size: 1.8em;
+		font-weight: bold;
+		padding: 0 10px
+	}
+	
+	.contact-email-content {
+    	padding: 10px;
+	}
+	
+	.contact-email-box {
+    	padding: 0 10px;
+	}
+	
+	.contact-email-box input{
+		border:1px solid #000;
+		padding:3px
+	}
+		.contact-email-box input:focus{
+			border:1px solid #F90	
+		}
+
+/* -- splash -- */
+ul#rl_widgetrow_prl{
+	list-style-type:none;
+	margin:0px;
+	padding:0px	
+}
+	ul#rl_widgetrow_prl li{
+		float:left;
+		width:320px;
+		height:430px;
+		position:relative
+	}
+
+.widget:hover{ 
+	box-shadow:0 3px 26px 3px rgba(0, 0, 0, 0.39);
+	cursor:pointer
+}
+
+.widget_cta{
+	position:absolute;
+	bottom:0;
+	left:0;
+	text-align:center;
+	width:100%	
+}
+
+.widget_cat{
+	display:block;
+	height:36px;
+	line-height:36px;
+	text-align:center;
+	text-transform:uppercase;
+	font-size:1.2em
+}
+
+.widget_content{
+    font-size: 1.2em;
+    padding: 0 22px;
+    position: absolute;
+    text-align: center;
+    top: 300px;
+}
+	.widget_content h2{
+		font-style:italic;
+		font-weight:300	
+	}
+	
+	.widget_content p{
+		position:static;
+		padding:0px;
+		font-size:1em;
+		color:#000;
+		text-transform:none;
+		white-space:normal;
+		line-height:1.4em	
+	}
+	
+#fullscreenheaderslider{
+	min-height:600px	
+}
+
+
+
+.blur-a {
+    -webkit-animation:blurred 1s ease;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes blurred { 
+    100% { -webkit-filter: blur(1px) grayscale(0.8); }  
+}
+@-webkit-keyframes unblurred { 
+    100% { -webkit-filter: blur(0px) grayscale(0); }  
+}
+.elife-post-social{
+	margin-top:110px;
+	
+}
+.product{
+	width:115px;
+	margin:10px 11px;
+	height:260px
+}
+.elife-product-list.other-details .product-name{display:block;font-weight:bold;font-family:'Myriad-pro';font-size:1.2em;text-transform:uppercase;height:19px;overflow:hidden;padding:0;margin-bottom:1px}.elife-product-list.other-details{margin:0}.elife-product-list.other-details .product-other-sum{min-height:35px;overflow:hidden}.elife-product-list.other-details .product-other-sum
+p{margin-bottom:0em}
+.elife-product-list.other-details .product-other-price{margin-top:1px}
+.elife-product-list.other-details .saleoff-other-price{font-size:1em}.product-info{margin-top:10px;font-weight:bold;color:#000}
+.elife-product-detail{min-height:460px}
+.social-likebox{}
+.elife-face-like-box{margin-top:20px}
+.elife-manufacturer-others{padding-top:15px;width:242px}
+.elife-manufacturer-detail{padding:15px;width:720px}
+.elife-product-detail .fb-like{padding-top:10px}
+/*-------------------------subgroups---------------------------*/
+
+#sub-menu ul{
+	display:none;
+}
+
+/*--------------------tab-----------------------*/
+
+#tabs {
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#tabs li {
+  float: left;
+  margin: 0 .5em 0 0;
+}
+
+#tabs a {
+  position: relative;
+  background: #ddd;
+  background-image: linear-gradient(to bottom, #fff, #ddd);  
+  padding: .7em 3.5em;
+  float: left;
+  text-decoration: none;
+  color: #444;
+  text-shadow: 0 1px 0 rgba(255,255,255,.8);
+  border-radius: 5px 0 0 0;
+  box-shadow: 0 2px 2px rgba(0,0,0,.4);
+  font-size: 1.3em;
+}
+
+#tabs a:hover,
+#tabs a:hover::after,
+#tabs a:focus,
+#tabs a:focus::after {
+  background: #fff;
+}
+
+#tabs a:focus {
+  outline: 0;
+}
+
+#tabs a::after {
+  content:'';
+  position:absolute;
+  z-index: 1;
+  top: 0;
+  right: -.5em;  
+  bottom: 0;
+  width: 1em;
+  background: #ddd;
+  background-image: linear-gradient(to bottom, #fff, #ddd);  
+  box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+  transform: skew(10deg);
+  border-radius: 0 5px 0 0;  
+}
+
+#tabs #current a,
+#tabs #current a::after {
+  background: #000;
+  color: #fff;
+  z-index: 3;
+}
+
+#content {
+  background: #fff;
+  padding: 2em;
+  height: 220px;
+  position: relative;
+  z-index: 2; 
+  border-radius: 0 5px 5px 5px;
+  box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, .5);
+  border: 1px solid #ccc;
+}
+#layout_news #elife-body{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+}
+#catbanner{margin-top:10px;}
+.item-groupmenu{
+	background:#ece9e9; margin-right:10px; padding:20px; border-radius:10px; box-shadow:2px 2px #ccc;margin-bottom: 40px;
+}

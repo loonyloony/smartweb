@@ -1,0 +1,145 @@
+/* Elife HTML-CSS Standard, Copyright 2008 by Phạm Quốc Tuấn, Email: busdcon@gmail.com */
+/*** RESET ***/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, textarea, input, select {margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline;}
+table {border-collapse: collapse; border-spacing: 0;}
+caption, th, td {text-align: left; font-weight: normal;}
+table, td, th {vertical-align: middle;}
+a img {border: none;}
+:focus {outline: 0;}
+
+/* 
+   GENERAL 
+------------------------------------------------------------------- */
+html {
+	height: 100%;
+	padding-bottom: 1px; /* force scrollbars */
+}
+
+/* 
+   TYPING 
+------------------------------------------------------------------- */
+/* Headings */
+h1,h2,h3,h4,h5,h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a {
+	line-height: 1;
+	margin-bottom: 0.3em;
+}
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin: 0;}
+
+object { vertical-align:top; outline:none;border:0}
+
+
+/* 
+   COMMON TYPING CLASS 
+------------------------------------------------------------------- */
+.elife-text-left {text-align: left;}
+.elife-text-right {text-align: right;}
+.elife-text-center {text-align: center;}
+.elife-text-separator {padding: 0 5px;}
+
+.elife-small {font-size: 0.9em;}
+.elife-smaller {font-size: 0.8em;}
+.elife-smallest {font-size: 0.7em;}
+
+.elife-large {font-size: 1.15em;}
+.elife-larger {font-size: 1.25em;}
+.elife-largest {font-size: 1.35em;}
+
+.elife-hidden {display: none;}
+
+
+/* 
+   COMMON ALIGNMENT CLASS 
+------------------------------------------------------------------- */
+/* General */
+.elife-center,.elife-aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Floats */   
+.elife-left,.elife-alignleft {float: left;}
+.elife-right,.elife-alignright {float: right;}
+.elife-center{margin:0 auto}
+.clear,.clearer {clear: both;}
+.clearer {
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	height: 0;
+}
+
+/* Images */
+img.elife-bordered,img.elife-alignleft,img.elife-alignright,img.elife-aligncenter {
+	background-color: #FFF;
+	border: 1px solid #DDD;
+	padding: 3px;
+}
+img.elife-alignleft, img.elife-left {margin: 0 10px 10px 0;}
+img.elife-alignright, img.elife-right {margin: 0 0 1em 1.5em;}
+
+/* 
+   LIST - TABLE
+------------------------------------------------------------------- */
+/* Default Lists */
+li ul, li ol {margin-left: 1.5em;}
+ul, ol {margin: 0 0 0em 1.5em;}
+ul {
+	list-style-type: square;
+	/*font-weight: bold;*/
+}
+ol {
+	list-style-type: decimal;
+	margin-left: 1.9em;
+}
+
+dl {margin: 0 0 1.5em 0;}
+dl dt {font-weight: bold;}
+dd {margin-left: 1.5em;}
+
+
+/* Special lists */
+ul.elife-blank-list li, ul.elife-list li, ul.elife-tab-list li {
+	list-style: none;
+	margin-top: 0;
+}
+
+
+ul.elife-blank-list {margin: 0;} /* DANH SACH KHONG CO CSS */
+
+ul.elife-list {margin-left: 0;} /* DANH SACH DANG VERTICAL */
+ul.elife-list li {
+	border-top: 1px solid #EEE;
+	list-style: none;
+	padding: 4px 0;
+}
+ul.elife-list li:first-child {border-top: none;}
+ul.elife-list li .elife-right {color: #999;}
+
+
+/* Columns */
+.elife-col2 {width: 46%;}
+.elife-col2.elife-other{width:48%}
+.elife-col3, .col3-mid {width: 32%;}
+.elife-col3-mid {margin-left: 2%;}
+.elife-col4 {width: 25%;}
+.elife-col4-end {margin-left: 0;}
+
+/* 
+   AREA DEFAULT 
+------------------------------------------------------------------- */
+#elife-top{display:none}
+
+#elife-logo{}
+
+#elife-logo a, 
+#elife-logo a:hover, 
+#elife-splash a, 
+#elife-splash a:hover
+{text-decoration:none; border:none}
+
+
+.elife-content .elife-section-content img{}
+
+.elife-abs{position:absolute}
+

@@ -1,0 +1,18 @@
+/* CSS Document */
+.sitemapmenu ul{margin:0}
+.sitemapmenu li{list-style:none;}
+
+.sitemapmenu a{display:block; width:100%; padding:10px;  border-bottom:1px solid #444}
+
+/*Mau tung cap menu*/
+.sitemapmenu ul li a{background:#083262; color:#FFF}
+.sitemapmenu ul li ul li a{background:#0f0f0f; color:#FFF}
+.sitemapmenu ul li ul li ul li a{background:#222; color:#FFF}
+
+.sitemapmenu ul li ul{display:none}
+
+.treetoggle{display:inline-block; width:16px; height:16px; margin-bottom:0.3em; margin-right:5px}
+
+.treetoggle.bgplus{background:url("../image/icon/Plus.gif") top left no-repeat;}
+.treetoggle.bgminus{background:url("../image/icon/Minus.gif") top left no-repeat;}
+.treetoggle.bgnone{background:url("../image/icon/none.gif") top left no-repeat;}

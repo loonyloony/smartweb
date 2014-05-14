@@ -1,0 +1,97 @@
+/* CSS Document */
+#navigation {font-size:1.2em; width:100%; margin-top:1px; margin-bottom:15px;}
+
+#navigation ul{margin:0; padding:0;}
+#navigation li {list-style: none; z-index:100;}
+
+ul.top-level {background:fff;}
+ul.top-level li {
+	background: url(../image/bg-content-box.gif) repeat-x;
+	height:15px;
+	border-bottom: #fff solid;
+	border-top: #fff solid;
+	border-width: 1px;
+	padding: 10px 0 15px 15px;
+	font:bold 1em sans-serif;
+	color:#000000;
+}
+
+#navigation a {
+	color: #000000;
+	cursor: pointer;
+	display:block;
+	height:25px;
+	line-height: 25px;
+	text-indent: 10px;                   
+	text-decoration:none;
+	width:100%;
+}
+#navigation a:hover{
+ 	text-decoration:underline;
+}
+
+#navigation li:hover {
+	background: url(../image/black-bg.png) repeat-x;
+	color:#ffffff;
+	cursor: pointer;
+	position: relative;
+}
+
+ul.sub-level {
+    display: none;
+	width:100%;
+	border-radius:6px;
+}
+li:hover .sub-level {
+    background: #fff;
+    border: #fff solid;
+    border-width: 1px;
+    display: block;
+    position: absolute;
+    left: 80%;
+    top: 5px;
+}
+
+ul.sub-level li {
+    border: none;
+    float:left;
+    width:100%;
+	border-radius:6px;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+#navigation .sub-level .sub-level a{
+    color:#000 !important;
+}
+
+ul.sub-level li:hover a{
+    color:#fff !important;
+}
+
+#navigation .sub-level .sub-level li:hover a{
+    color:#fff !important;
+}
+
+
+/*Seconda Level*/
+#navigation .sub-level {
+    background: #fff;
+}
+
+/*Third Level*/
+#navigation .sub-level .sub-level {
+    background: #fff;
+}
+
+/*RESET STYLES*/
+li:hover .sub-level .sub-level {
+	display:none;
+}
+
+li:hover .sub-level .sub-level {
+	display:none;
+}
+.sub-level li:hover .sub-level {
+	display:block;
+}

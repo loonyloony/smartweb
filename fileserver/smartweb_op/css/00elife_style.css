@@ -1,0 +1,413 @@
+/* Elife HTML-CSS Standard, Copyright 2008 by Phạm Quốc Tuấn, Email: busdcon@gmail.com */
+
+@font-face {
+	font-family: OSD;
+	font-style:  normal;
+	font-weight: normal;
+	src: url(../../common/font/opensanscondensedlight.ttf);
+}
+
+@font-face {
+	font-family: OSD;
+	font-style:  normal;
+	font-weight: bold;
+	src: url(../../common/font/opensanscondensedbold.ttf);
+}
+
+/*
+   MAIN SETTING - CAI DAT CHUNG CHO WEBSITE 
+------------------------------------------------------------------- */
+body {
+	background:#fff;      /* Màu - Đường dẫn hình - Lề dọc - Lề ngang - Lặp lại */
+	color: #000;
+	font: normal 100%  arial, 'Helvetica', Verdana, sans-serif;
+	font-size:11px; 
+	line-height: 1.67em; 
+}
+
+#elife-fixbackground{
+	/*background:#eee;*/
+}
+
+
+.elife-other{} /* Kiểu chữ khác kiểu mặc định */
+
+/* Paragraph */
+p {margin-bottom: 0.5em;}
+p.elife-other{}
+
+blockquote{
+	color:#444;
+	font-size:1.2em;
+	margin:10px 25px 10px 25px;
+	padding:0px 20px 0px 20px;
+	border-left: 2px dotted #DDD;
+}
+
+/* Links */
+a {
+	color: #111;
+	text-decoration: none;
+	cursor:pointer;
+}
+a:focus,a:hover 
+{
+	color: #000; 
+	text-decoration:underline;
+	/*border-bottom: 1px solid #424E61; */
+	cursor:pointer;
+}
+
+a.elife-other {}
+a.elife-other:hover {}
+
+/* Headings */
+h1,h2,h3,h4,h5,h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a {
+	font-family: 'OSD'; 
+	color: #000;
+	/*font-weight: bold;*/
+	line-height:1.5em;
+	font-weight:bold
+}
+h1 {font-size: 2.8em; margin-top:0.3em;}
+h1 a{}
+h2 {font-size: 1.8em;}
+h3 {font-size: 1.5em;}
+h3 a{}
+h4 {font-size: 1.25em;}
+h5 {font-size: 1.1em;}
+h6 {font-size: 1em;}
+
+/* 
+   BREADCRUMB - Đường dẫn website đến trang hiện tại
+------------------------------------------------------------------- */
+.elife-breadcrumb{color:#888; font-size:1em;}
+.elife-breadcrumb a{}
+.elife-breadcrumb span.elife-space{padding:0 0.6em;}
+.elife-breadcrumb span.elife-end{}
+
+
+/* 
+   LAYOUT SETTING - CAI DAT BO CUC CAC THANH PHAN CHINH CUA SITE 
+   Ghi chú:
+   #elife-tenthanhphan .elife-wrapper{} dùng để canh chỉnh khoảng cách lọt nội dung
+------------------------------------------------------------------- */
+/* Background trên cùng của website */
+#elife-main-bgtop{}
+
+/* Background dưới cùng của website */
+#elife-main{}
+
+/* Khu vực chính to nhất */
+#elife-canvas{}
+
+.elife-page-wrapper{width:960px; margin:0 auto;} 
+#elife-footer .elife-page-wrapper{width:100%} 
+
+/* Top div */
+#elife-top{
+	display:none;	
+}
+
+/* Header div */
+#elife-header{}
+
+#elife-logo{}
+#elife-logo a{}
+
+#elife-header-content{}
+
+/* Footer Div */
+#elife-footer{/*background:#242424;*/}
+#elife-footer a{color:#FFF}
+#elife-footer .elife-page-wrapper{padding-top:5px;}
+#elife-footer-left{}
+#elife-footer-right{text-align:right}
+
+
+/* 
+   NAVIGATION - KHU VỰC CHỨA MENU CHÍNH CỦA WEBSITE 
+------------------------------------------------------------------- */
+/* Style cho div Navigation */
+#elife-navigation{   
+	color: #fff;
+	font-size:1.1em;
+}
+
+#elife-navigation .elife-page-wrapper{}
+
+/* 
+   SPLASH - DASHBOARD 
+------------------------------------------------------------------- */
+.elife-splash{}
+.elife-splash .elife-splash-content{}
+
+.elife-dashboard{}
+.elife-dashboard .elife-splash-content{}
+
+/*
+   SIDEBAR - CONTENT 
+------------------------------------------------------------------- */
+/* 
+.elife-sidebar-left{}
+.elife-sidebar-left .elife-wrapper{padding:0px}
+
+.elife-content{background:url(../image/bg_contenttitle.png) top left repeat}
+.elife-content .elife-wrapper{padding:20px}
+
+.elife-sidebar-right{}
+.elife-sidebar-left .elife-wrapper{padding:0px}
+
+
+/* Sidebar Section */
+.elife-sidebar .elife-section{margin-bottom:10px}
+
+.elife-sidebar .elife-section-title{background:#22b431; height:32px; font-size:1.2em; border-radius: 3px 3px 0px 0px;}
+.elife-sidebar .elife-section-title, .elife-sidebar .elife-section-title a{color: #FFF;}
+.elife-sidebar .elife-section-title a:hover{color: #FFF}
+.elife-sidebar .elife-section-title .elife-wrapper{text-align:center; padding:6px;}
+
+.elife-sidebar .elife-section-content{border: 1px solid #ccc; border-radius: 0px 0px 5px 5px;}
+.elife-sidebar .elife-section-content .elife-wrapper{padding:5px}
+
+
+/* Content Section */
+.elife-content .elife-section{padding: 15px;}
+.elife-content .elife-section-title{}
+.elife-content .elife-section-content{word-spacing:2pt;}
+
+.elife-content .elife-section-footer{}
+
+
+
+
+/* 
+   DẠNG TIN TỨC LIST 
+------------------------------------------------------------------- */
+.elife-post{}
+.elife-post-image{float:left; margin-right:10px}
+.elife-post-title{}
+.elife-post-date{margin:0}
+.elife-post-summary{text-align:justify;margin: 0 0 5px;}
+.elife-post-source{text-align:right; font-weight:bold}
+.elife-post-author{text-align:right; font-weight:bold}
+.elife-post-others{}
+.elife-post-footer{margin-top:10px}
+
+
+/* Social Media in post */
+.elife-post-social .like_btn, .elife-post-social .tweet_btn, .elife-post-social .plus_btn{display:block; float:left; max-width:92px; margin-right:5px; padding:0}
+
+
+
+
+
+
+/* 
+   MESSAGE ERROR - CÁC DẠNG THỂ HIỆN THÔNG BÁO LỖI
+------------------------------------------------------------------- */
+.elife-error, .elife-notice, .elife-success{
+	border: 1px solid #DDD;
+	margin-bottom: 1em;
+	padding: 0.6em 0.8em;
+}
+
+.elife-error {background: #FBE3E4; color: #8A1F11; border-color: #FBC2C4;}
+.elife-error a {color: #8A1F11;}
+
+.elife-notice {background: #FFF6BF; color: #514721; border-color: #FFD324;}
+.elife-notice a {color: #514721;}
+
+.elife-success {background: #E6EFC2; color: #264409; border-color: #C6D880;}
+.elife-success a {color: #264409;}
+
+
+/* 
+   Separators | ĐƯỜNG NGĂN CÁCH
+------------------------------------------------------------------- */
+.elife-content-line, .elife-item-line, .elife-hline {
+	background: #333;
+	clear: both;
+	color: #CCCCCC;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	height: 1px;	
+}
+.elife-content-line {margin: 20px 0;}
+.elife-item-line {margin-bottom: 10px;}
+.elife-hline {margin-bottom: 5px; margin-top:5px}
+
+
+/* 
+   FORM
+------------------------------------------------------------------- */
+label {
+	cursor: pointer;
+	color:#888;
+	margin-bottom: 0.2em;
+	font-size:15px;
+}
+label.checkbox, label.radio {font-weight: normal;}
+
+legend {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+textarea {overflow: auto;}
+
+input.elife-textbox, textarea, select {
+	margin: 0.6em 0 0;
+	padding: 6px;
+	border: 1px solid #333;
+	/*border-radius:4px;
+	border-top-color:#BBB;*/
+	background: none;
+	font-size:1em;
+	width:200px;
+	color:#888;
+}
+
+textarea
+{
+	width:90%;
+	height:120px;
+}
+select{width:215px}
+
+input.elife-textbox:focus, textarea:focus, select:focus {background: none; border-color:#0066b3}
+
+.elife-button {
+	background: #272727;
+	padding: 5px 15px;
+	border-radius: 2px;
+	color:#fff;
+	border: none;
+	margin-top:6px;
+	font-size:1em;
+	cursor:pointer;
+}
+
+.elife-button:hover{
+	background: #0066b3;
+	color:#fff;
+	text-decoration:none;
+}
+
+input.elife-button:active, a.elife-button:active, a.elife-button.elife-other:active {border:1px ridge #CCC; }
+
+a.elife-button{
+	cursor:pointer;	
+}
+
+a.elife-button:hover{
+}
+
+.elife-button.elife-other{
+	background: #EB028F;
+	color:#fff;
+	border: none;
+	margin-top:6px;
+	padding: 5px 15px;
+	border-radius: 2px;
+	font-size:1em;
+	cursor:pointer;
+	text-decoration:none;
+}
+
+.elife-button.elife-other:hover{
+	background: #006;
+}
+
+a.elife-button.elife-other{
+	cursor:pointer;	
+}
+
+/* Tables */
+table {margin-bottom: 0.5em; width: 100%;}
+th {font-weight: bold;}
+thead th {text-align:center}
+th,td,caption {/*padding: 4px 10px 4px 5px;*/}
+tr.even td {background: #F2F6FA;}
+tfoot {font-style:normal}
+caption {background: #EEE;}
+
+table.elife-table {
+	border: 1px solid #CCB;
+	margin-bottom: 2em;
+	width: 100%;
+}
+table.elife-table th {
+	background: #F0F0F0;
+	border: 1px solid #DDD;
+	color: #555;
+	text-align: center;
+}
+table.elife-table tr {border-bottom: 1px solid #DDD;}
+table.elife-table td, table th {text-align:center}
+table.elife-table td {
+	background: #F6F6F6;
+	border: 1px solid #DDD;
+	padding:2px;
+}
+table.elife-table tr.even td {background: #FCFCFC;}
+
+table.elife-form td{padding:2px;}
+table.elife-form tr{vertical-align:middle}
+
+
+
+/*-------PAGINATION PHAN TRANG------------*/
+.elife-pagination{margin-top:0.6em;}
+.elife-pagination ul{
+	border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    display: block;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.elife-pagination li{display:inline}
+
+.elife-pagination li:first-child a {
+    border-left: 1px solid #333;
+}
+
+.elife-pagination a {
+    font-size: 1em;
+    line-height: 30px;
+    padding: 0 12px;
+    text-align: center;
+    border: 1px solid #333333;
+    float: left;
+    text-decoration: none;
+}
+
+.elife-pagination a:hover {background:#0066b3}
+
+.elife-pagination a.current {
+    background-color: #0066b3;
+    color: #FFFFFF;
+}
+
+
+#elife-header-content {text-align: right;}
+.elife-language {font-size: 1.1em;}
+.elife-language a {font-style: italic; text-decoration: underline;}
+#elife-header-content .elife-language a:hover {color:#ffa500}
+.elife-hotline {margin-top: 10px; font-style: italic; font-size: 1.8em;}
+
+
+
+.img-responsive {
+    display:block;
+    max-width: 100%;
+    height: auto;
+}
+
+#elife-nav-mobile {display: none; height: 24px; background: #1d1d1d; padding-top: 8px; position: relative;  cursor: pointer}
+#elife-nav-mobile .navbar {margin-left: 10px; text-transform: uppercase;}
+#elife-nav-mobile .navdrop {position: absolute; top: 4px; right: 3px; width: 20px; height: 18px; border: 1px solid #ccc; border-radius: 3px; padding-top: 2px}
+#elife-nav-mobile .navdrop .navline {background: #ccc; height: 1px; width: 14px; display: block; margin:3px auto}
+
+

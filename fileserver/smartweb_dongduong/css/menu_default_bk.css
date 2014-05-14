@@ -1,0 +1,184 @@
+/* Style Chung cho toàn menu */
+#elife-menu ul{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	list-style-position:outside;
+	position:relative;
+	z-index:100;
+	border:none;
+}
+
+#elife-menu a{
+	display:block;
+	/*padding:8px 12px 0px 12px;*/          /* Padding tất cả a */
+	color:#000;               /* Màu link */
+	text-decoration:none;
+	height:20px;              /* Chiều Cao tất cả a */
+    text-transform: uppercase;
+	text-shadow:1px 1px 0px #ccc;
+	/*font-size:0.9em*/
+}
+
+#elife-menu a:hover{
+	/*color:#FF0; */             /* Màu link hover */
+	text-decoration:none;	
+	border-bottom: 3px solid #000;
+}
+
+#elife-menu a.active{  /* CSS cho Menu Active */
+	color:#000;
+}
+
+#elife-menu li{
+	padding:9px 12px 0px 12px;
+	float:left;
+	position:relative;
+	text-align:center;
+	border-right: 0px solid #828080;
+	width:100px;
+	height:32px
+}
+
+#elife-menu li:hover{
+	color: #ffa500;
+}
+
+/* Cap 1 Style */
+#elife-menu ul li {
+	float:left;
+	position:static;
+	width:auto;
+}
+
+#elife-menu ul li:hover {
+	color:#ffa500;
+}
+
+/* Cap 2 Style */
+#elife-menu ul ul {
+	position:absolute;
+	display:none;
+	top:35px;                         /* = chiều cao của 1 li */
+	left:0px;
+	width:960px;
+	background:#fff
+}
+
+#elife-menu ul ul li{
+	/*background:#000  top center repeat-x;*/ /* Background Menu Cấp 2 */   
+	text-align:left;
+}
+
+#elife-menu ul ul li a{
+
+}
+
+#elife-menu ul ul li:hover{
+	border:0px;  
+}
+
+/* Cap 3 Style */
+#elife-menu ul ul ul{
+	position:absolute;
+	top:0px;
+}	
+
+#elife-menu ul li ul ul {
+left:200px; /* = chiều rộng của li */
+margin:0px;
+}
+
+/* Cap 2, 3, 4 */
+#elife-menu ul li:hover ul ul, 
+#elife-menu ul li:hover ul ul ul, 
+#elife-menu ul li:hover ul ul ul ul{
+	display:block;
+}
+#elife-menu ul li:hover ul, 
+#elife-menu ul li li:hover ul, 
+#elife-menu ul li li li:hover ul, 
+#elife-menu ul li li li li:hover ul{
+	display:block;
+}
+
+#totp{
+	position:relative
+}
+.totp-wrapper{
+	width:1000px;
+	margin:0 auto;
+	position:relative
+}
+	#first-totp{
+		background:url(../image/totp-bg1.jpg) top center no-repeat;
+		background-size:cover;
+		position:relative;
+		min-height:765px
+	}
+		.totp-slogan1{
+			position:absolute;
+			top:200px;
+			left:50%
+		}
+		.totp-slogan2{
+			position:absolute;
+			top:220px;
+			left:10%
+		}
+		.totp-first-content{
+			background:#600768;
+			padding:10px;
+			width:500px;
+			color:#fff;
+			text-align:justify;
+			top:599px;
+			left:5%;
+			font-size:1.1em;
+			position:absolute
+		}
+			.totp-first-title-content{
+				margin:10px 0px;
+				font-size:1.4em
+			}
+	#second-totp{
+		background:url(../image/totp-bg2.jpg) top center no-repeat;
+		background-size:cover;
+		position:relative;
+		min-height:1269px
+	}
+	
+		.totp30{width:24%}
+		.pad20{padding:20px}
+		.totp-second-above-content,
+		.totp-second-below-content{
+			padding-top:100px	
+		}
+		.totp-second-title-content{
+			color:#fff;
+			font-size:1.4em;
+			margin:10px 0px;
+			font-weight:bold	
+		}
+		.totp-second-detail-content{
+			color:#fff;
+			font-size:1.1em
+		}
+		.totp-image-content{min-height:500px; position:relative}
+		
+			.totp-simage1{width:284px; height:191px;position:absolute; top:85px; left:50%; z-index:90}
+			.totp-simage2{width:284px; height:191px;position:absolute; top:250px; left:30%; z-index:70}
+			.totp-simage3{width:284px; height:191px;position:absolute; top:405px; left:10%; z-index:50}
+			
+		.totp-second-below-content{width:500px}
+		
+			.totp-simage4{width:322px; height:483px; position:absolute; top:409px; left:62%}
+			
+	#third-totp{background:#eeeeee; padding:10px 0px}
+		.pro-totp{color:#a30000; font-weight:bolder; padding:10px 0px}
+		.width45{width:200px; padding:5px; background:#65008e; color:#fff; text-align:center}
+		.pro-left-top{width:450px}
+		.price{font-weight:bolder; font-size:1.5em}
+		.green{color:#3ced1f}
+		.hotline-totp{color:#ed1f24; font-size:3.2em; padding:8px}
+		.hl-content{padding:10px 10px 10px 100px; font-size:1.2em}

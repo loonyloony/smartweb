@@ -1,0 +1,10 @@
+/* CSS Document */
+#homelink{background:url(../image/assets/bg/bg_transparent2.png) top left repeat; margin-top:-65px; position:relative; z-index:1000}
+
+#homelink .elife-page-wrapper{width:100%; margin:0 auto; text-align:center}
+
+#homelink .footer{text-align:left}
+
+#homelink .links td{text-align:center}
+#homelink .links a{color:#fff; display:block; border-bottom:2px solid #9923D7; margin-right:3px; padding:10px 10px; font-size:0.9em}
+#homelink .links a:hover{background:#9923D7; color:#fff; text-decoration:none; border-bottom:4px solid #333;}

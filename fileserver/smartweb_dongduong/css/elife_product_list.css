@@ -1,0 +1,37 @@
+.elife-product
+h1{margin:0;padding:0}.elife-product-count{font-size:0.5em;color:#999;margin-left:5px}.elife-product .elife-pagination{display:table;color:#000}.elife-product .elife-pagination
+span{display:table-cell;vertical-align:middle;font-weight:bold}.elife-product .elife-pagination
+ul{display:inline-block;margin-bottom:0;margin-left:10px}.elife-product .elife-pagination
+li{display:inline}.elife-product .elife-pagination li:first-child
+a{}.elife-product .elife-pagination
+a{text-align:center;float:left;text-decoration:none;color:#000}.elife-product .elife-pagination a.next:hover{color:#000}.elife-product .elife-pagination a.prev:hover{color:#000}.elife-product .elife-pagination a.next
+span{background:url("/smartweb_fanhanghieu/image/icon-pagenext.png") center no-repeat;width:7px;height:8px;display:table-cell;vertical-align:middle}.elife-product .elife-pagination a.prev
+span{background:url("/smartweb_fanhanghieu/image/icon-pageprev.png") center no-repeat;width:7px;height:8px}.elife-product .elife-pagination a:hover{color:orange}.elife-product .elife-pagination
+a.current{background:transparent;color:orange}.elife-product-toolbar
+select{width:150px;background-color:#ccc; border-radius:5px;}.elife-product-list{position:relative;margin:10px
+0px}.elife-product-list .elife-wrapper{padding:0px}.elife-product-list
+ul{clear:both;display:block;margin:0}.elife-product-list
+li.product{float:left;list-style:none outside none;margin-top:15px;margin-bottom:15px;text-align:center;width:200px;height:280px}#product-list .elife-product-list li.product:nth-child(3n+2){margin-left:22px;margin-right:22px}.elife-product-list .product-image{height:180px;text-align:center;width:200px;}.elife-product-list .sale-icon{background:transparent url(/smartweb_fanhanghieu/image/icon/sale-icon.gif) top left no-repeat;display:block;height:35px;left:0;position:absolute;top:0;width:35px}.elife-product-list .product .product-name{padding-top:10px;text-align:center;margin-top:10px}.elife-product-list .product-name, li.name_price
+a{color:#000;font-weight:bold;height:40px}.elife-product-list .product a:hover{text-decoration:none}.elife-product-list .product .product-name .product-info{margin-top:8px}.elife-product-list .product .product-name .product-info .product-link{color:#000}.elife-product-list .product .product-name .product-info .product-link:hover{color:orange}.elife-product-list .product .product-name
+.name{display:block;height:1.6em;line-height:1.6em;color:#696969;overflow:hidden;font-weight:normal}.elife-product-list .product .product-name
+.model{font-family:'Myriad-pro';text-transform:uppercase;font-size:1.5em;line-height:1.2em;background: #cccccc; padding: 5px; border-radius: 3px;}.manufacturer-title{text-transform:uppercase;padding:8px
+11px;font-size:1.1em;text-align:center;font-weight:bold;border:1px
+solid #ccc}.manufacturer-title.other{padding:10px
+20px}.manufacturer-title:hover{color:orange;background-color:#b7b7b7}.elife-product-list .product .product-price{font-family:'Myriad-pro';color:#000;display:block;padding-top:1px;text-align:left;font-size:1.3em;font-weight:bold;text-transform:uppercase}span.sale-price{color:#000}.elife-product-category
+a{display:block;width:100%;border-bottom:1px dotted #ccc;font-size:0.9em}.elife-product-category a:hover{color:#FFF;text-decoration:none;background:#444}.elife-product-category
+a.current{color:#FA9C2B !important;font-weight:bold}.elife-product-category
+ul{margin:0}.elife-product-category ul
+li{list-style:none}.elife-product-category ul
+ul{margin-left:10px}.elife-product-search{}.elife-product-search .group-section{}.elife-product-search .group-title{border-bottom:1px solid #DEDFDF;color:#959CA1;cursor:pointer;font-size:11px;font-weight:bold;margin-bottom:0;padding:6px
+0 6px 5px;text-transform:uppercase}.elife-product-search .group-content{padding:10px
+5px;border-bottom:1px solid #DEDFDF}.elife-product-search .group-title
+span{color:#090C0E;font-weight:normal}.elife-product-search input.elife-textbox{width:100px}.elife-product-search .product-color-list
+ul{margin:0}.elife-product-search .product-color-list
+li{list-style:none}.elife-product-search .product-color-list a.color-link{display:block;height:32px}.elife-product-search .product-color-list
+span.color{background:#009;display:inline-block;width:18px;height:18px;border-radius:18px;margin-right:5px;border:3px
+solid transparent;float:left}.elife-product-search .product-color-list
+span.colorname{display:inline-block;height:24px;padding-top:2px}.elife-product-search .product-color-list span.color:hover{border:3px
+solid #CCC}.elife-product-search .product-color-list
+span.color.current{border:3px
+solid #000}.elife-product-search .product-size-list
+a{margin-right:10px}.o-sale-price{text-decoration:line-through}

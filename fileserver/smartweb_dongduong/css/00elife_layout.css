@@ -1,0 +1,92 @@
+/* Elife HTML-CSS Standard, Copyright 2008 by Phạm Quốc Tuấn, Email: busdcon@gmail.com */
+
+/* 
+   CUSTOMIZE 
+------------------------------------------------------------------- */
+
+/* Khu vực chính TO NHẤT */
+#elife-main{
+	position:relative;
+	z-index:60;
+	width:960px;
+	margin:0 auto;
+}
+#elife-fixbackground{
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	z-index:50;
+	margin:0px;
+	padding:0px
+}
+.elife-page-wrapper{width:100%; margin:0 auto; position:relative}
+
+#elife-canvas{ 
+	width:100%;
+	margin:0 auto;
+}
+
+/* HEADER */
+#elife-header{
+	height:93px;
+    background: url(../image/bg_header.png) top left repeat-x;
+}
+
+#elife-logo{width:219px; height:auto; z-index:300; float:left;}
+
+#elife-header-content{
+	position: absolute;
+    top: -10px;
+    right: 0px;
+}
+
+/* Footer Div */
+#elife-footer{width:100%; height:30px; margin-top: 20px;}
+#elife-footer-left{width:49%}
+#elife-footer-right{width:49%;}
+
+#elife-body{margin-top:35px; min-height:500px; position:relative; z-index:100; }
+
+/* 
+   NAVIGATION - KHU VỰC CHỨA MENU CHÍNH CỦA WEBSITE 
+------------------------------------------------------------------- */
+/* Style cho div Navigation */
+#elife-navigation{
+	height:34px;
+	position:relative;
+	z-index:299;
+	background:#ccc;
+}
+
+
+.elife-pagination{padding-top:5px}
+
+.elife-content .elife-section-content{padding:0px 0px 20px 0px;}
+
+/* 
+   FIXED 
+------------------------------------------------------------------- */
+/*LAYOUT 0 SIDEBAR*/
+.elife-layout-nosidebar .elife-sidebar-left{display:none}
+.elife-layout-nosidebar .elife-sidebar-right{display:none}
+.elife-layout-nosidebar .elife-content{width:100%}
+
+/*LAYOUT 1 SIDEBAR LEFT*/
+.elife-layout-leftsidebar .elife-sidebar-left{float:left; width:190px}
+.elife-layout-leftsidebar .elife-sidebar-right{display:none}
+.elife-layout-leftsidebar .elife-content{float:right; width:750px}
+
+/*LAYOUT 1 SIDEBAR RIGHT*/
+.elife-layout-rightsidebar .elife-sidebar-left{display:none}
+.elife-layout-rightsidebar .elife-sidebar-right{float:right; width:190px}
+.elife-layout-rightsidebar .elife-content{float:left; width:750px}
+
+/*LAYOUT 2 SIDEBAR*/
+.elife-layout-twosidebar .elife-sidebar-left{float:left; width:190px}
+.elife-layout-twosidebar .elife-sidebar-right{float:right; width:190px}
+.elife-layout-twosidebar .elife-content{float:left; width:540px; margin-left:20px}
+
+.seo_content {position: absolute; width: 0; height: 0; overflow: hidden}
