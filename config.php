@@ -1,10 +1,10 @@
 <?php
 // HTTP
-$root_http_server = "http://localhost/smartweb_dd/";
-$file_server = "http://localhost/smartweb_dd/fileserver/";
+$root_http_server = "http://localhost:81/smartweb/";
+$file_server = "http://localhost:81/smartweb/fileserver/";
 //$min_file_server = "http://localhost:81/min/f=smartweb/fileserver/"; //host: $min_file_server = "http://css.webe.vn/min/f=";
-$min_file_server = "http://localhost/smartweb_dd/fileserver/";
-$image_server = "http://localhost/smartweb_dd/fileserver/";
+$min_file_server = "http://localhost:81/smartweb/fileserver/";
+$image_server = "http://localhost:81/smartweb/fileserver/";
 
 
 //Set language for website
@@ -42,7 +42,7 @@ define('DB_DRIVER', 'mysql');
 define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', 'root');
-define('DB_DATABASE', 'smartweb_op');   
+define('DB_DATABASE', 'smartweb_dongduong');   
 define('DB_PREFIX', '');
 
 

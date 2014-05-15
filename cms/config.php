@@ -1,6 +1,6 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://localhost/smartweb_dd/cms/');
+define('HTTP_SERVER', 'http://localhost:81/smartweb/cms/');
 
 
 // HTTPS

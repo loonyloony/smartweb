@@ -19,6 +19,15 @@ class ModelCoreSitemap extends Model
 		return $query->rows;	
 	}
 
+	public function getDescriptions($sitemapid)
+	{
+		$query = $this->db->query("Select sitemap_description.*
+									from `sitemap_description` 
+									where sitemapid='".$sitemapid."'
+									");
+		return $query->rows;	
+	}
+
 	
 	public function getList($siteid, $where = "")
 	{

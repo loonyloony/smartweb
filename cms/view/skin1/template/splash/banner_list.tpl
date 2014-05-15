@@ -60,7 +60,7 @@
                         <td><img src="images/resizepng-200x160/<?php echo $item['image'] ?>" /></td>
                         <td><?php echo $item['link'] ?></td>
                         <?php if($_GET['dialog'] != "true"){ ?>
-                         <td><input type="text" class="text" value="<?php echo $item['sortorder'] ?>" name="sortorder[<?php echo $item['weblinkid'] ?>]" /></td> 
+                         <td><input type="text" class="text" value="<?php echo $item['sortorder'] ?>" name="sortorder[<?php echo $item['weblinkid'] ?>]" /></td>
                         <td>
                         	<a href="<?php echo $item['linkedit']?>" class="button"><?php echo $button_edit ?></a>                        
                         </td>
