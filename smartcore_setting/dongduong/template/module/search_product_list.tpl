@@ -1,5 +1,5 @@
 <?php if($empty_key != "") {
-	echo $empty_key; } else {
+    echo $empty_key; } else {
 ?>
 <div class="elife-section-title"><h1><a><?php echo $sitemap." : ".$now_key ?></a><span class="elife-product-count">(<?php echo $count ?> items)</span></h1></div>
 <div class="elife-section-content elife-product">
@@ -61,27 +61,37 @@
 
 <script language="javascript">
 $('.filter_orderby').change(function(){
-	var order = $('input:radio[name=order]:checked').val();
-	var url = "<?php echo $this->smartweb->weburl ?>?filter=" + $(this).val() + "&order=" + order;
-	var page = "<?php echo $_GET['page'] ?>";
-	if(page != ''){
-		url += "&page=" + page;	
-	}
-	window.location = url;
+    var order = $('input:radio[name=order]:checked').val();
+    var keyword = "<?php echo urldecode($_GET['keyword']) ?>";
+    var manufacid = "<?php echo $_GET['manufacid'] ?>";
+    var url = "<?php echo $this->smartweb->weburl ?>?filter=" + $(this).val() + "&order=" + order;
+    if($.trim(keyword) != "")
+    {
+        url += "&keyword=" + keyword;
+    }
+    if($.trim(manufacid) != "")
+    {
+        url += "&manufacid=" + manufacid;
+    }
+    var page = "<?php echo $_GET['page'] ?>";
+    if(page != ''){
+        url += "&page=" + page; 
+    }
+    window.location = url;
 });
 
 $('.order').click(function(){
-	$(this).attr('checked', true);
-	order = this.value;
-	$('#order-' + order).attr('checked', true);
-	$('.filter_orderby').change();
+    $(this).attr('checked', true);
+    order = this.value;
+    $('#order-' + order).attr('checked', true);
+    $('.filter_orderby').change();
 });
 
 $('.order-bottom').click(function(){
-	$(this).attr('checked', true);
-	order = this.value;
-	$('#' + order).attr('checked', true);
-	$('.filter_orderby').change();
+    $(this).attr('checked', true);
+    order = this.value;
+    $('#' + order).attr('checked', true);
+    $('.filter_orderby').change();
 });
 
 $('.filter_orderby').each(function(index, element) {
@@ -89,20 +99,20 @@ $('.filter_orderby').each(function(index, element) {
 });
 
 $(document).ready(function(e) {
-	$('.order').each(function(index, element) {
+    $('.order').each(function(index, element) {
         $(this).attr('checked', false);
     });
-	
-	$('.order-bottom').each(function(index, element) {
+    
+    $('.order-bottom').each(function(index, element) {
         $(this).attr('checked', false);
     });
-	
+    
     order = "<?php echo $_GET['order'] ?>";
-	if(order == ''){
-		order = 'DESC';	
-	}
-	$('#' + order).attr('checked', true);
-	$('#order-' + order).attr('checked', true);
+    if(order == ''){
+        order = 'DESC'; 
+    }
+    $('#' + order).attr('checked', true);
+    $('#order-' + order).attr('checked', true);
 });
 //alert("<?php echo $_GET['order'] ?>");
 
