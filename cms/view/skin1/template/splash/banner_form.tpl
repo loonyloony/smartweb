@@ -41,7 +41,7 @@
                     <tr>
                         <td><label><?php echo $lbl_sitemap?></label></td>
                         <td>
-                            <select name="sitemap" class="sitemap">
+                            <select name="sitemapid" class="sitemapid">
                                 <?php echo $cbx_sitemapparent ?>
                             </select>
                         </td>

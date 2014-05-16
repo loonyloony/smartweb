@@ -26,14 +26,6 @@
         $this->load->model("core/sitemap");
         $this->load->model("common/control");
 
-        //Combobox Sitemap Parent
-        if($this->request->get[addonid] == "catbanner")
-        {
-            $this->data['sitemaps'] = $this->model_core_sitemap->getList(SITEID);
-            $this->model_core_sitemap->renderTreeView("",$this->data['sitemaps'], "treeicon", 15, "---");
-            $this->data['cbx_sitemapparent'] = $this->common->combobox($this->data['sitemaps'], "treetext", "sitemapid", $this->data['sitemap']["sitemapparent"], "----", "");
-        }
-
         //language base on member site
         $site = $this->model_core_site->getItem($this->member->getSiteId());
         $arr_site_language = explode(",", $site['language']);
@@ -49,9 +41,14 @@
             
             $this->data['weblink_description'] = $this->model_splash_banner->getDescriptions($this->request->get['weblinkid']);
         }
-        
-        $this->data['cbx_sitemapparent'] = $this->common->combobox($this->data['sitemaps'], "treetext", "sitemapid", $this->data['sitemap']["sitemapparent"], "----", "");
-        
+         //Combobox Sitemap Parent
+        if($this->request->get[addonid] == "catbanner")
+        {
+            $this->data['sitemaps'] = $this->model_core_sitemap->getList(SITEID);
+            $this->model_core_sitemap->renderTreeView("",$this->data['sitemaps'], "treeicon", 15, "---");
+            $this->data['cbx_sitemapparent'] = $this->common->combobox($this->data['sitemaps'], "treetext", "sitemapid", $this->data['weblink']['sitemapid'], "----", "");
+        }
+
         $this->id='content';
         $this->template="splash/banner_form.tpl";
         $this->layout="layout/center";
@@ -100,9 +97,9 @@
         
         if($this->validateForm($data))
         {
-            if(trim($data['sitemap']) != "")
+            if(trim($data['sitemapid']) != "")
             {
-                $sitemap = $this->model_core_sitemap->getDescriptions($data['sitemap']);
+                $sitemap = $this->model_core_sitemap->getDescriptions($data['sitemapid']);
                 if(count($sitemap) > 0)
                 {
                     foreach ($sitemap as $key => $item) {

@@ -17,7 +17,7 @@ class ControllerSplashCatbanner extends Controller
             }
         }
 
-        $banner = $this->model_splash_weblink->getList("catbanner", " AND (wd.title = '" . $seo_url . "' )");
+        $banner = $this->model_splash_weblink->getList("catbanner", " AND (wd.link = '" . $seo_url . "' )");
         if (count($banner) <= 0) {
             $banner = $this->model_splash_weblink->getList("catbanner", " AND (wd.title = 'all' OR wd.title = '" . $seo_url . "' )");
         }

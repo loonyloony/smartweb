@@ -5,12 +5,14 @@ class ModelSplashBanner extends Model{
         $addonid = $this->db->escape(@$data['addonid']);
         $link = $this->db->escape(@$data['link']);
         $image = $this->db->escape(@$data['image']);
+        $sitemapid = $this->db->escape(@$data['sitemapid']);
         $sortorder = 1;
         
         $field = array(
                         '`addonid`',
                         '`link`',
                         '`image`',
+                        '`sitemapid`',
                         '`sortorder`'
                     );
                     
@@ -18,6 +20,7 @@ class ModelSplashBanner extends Model{
                         $addonid,
                         $link,
                         $image,
+                        $sitemapid,
                         $sortorder
                     );
                     
@@ -58,17 +61,20 @@ class ModelSplashBanner extends Model{
         $addonid = $this->db->escape(@$data['addonid']);
         $image = $this->db->escape(@$data['image']);
         $link = $this->db->escape(@$data['link']);
+        $sitemapid = $this->db->escape(@$data['sitemapid']);
         
         $field = array(
                         '`addonid`',
                         '`image`',
-                        '`link`'
+                        '`link`',
+                        '`sitemapid`',
                     );
                     
         $value = array(
                         $addonid,
                         $image,
-                        $link
+                        $link,
+                        $sitemapid
                     );
         
         $where = " weblinkid = '" . $weblinkid . "'";
