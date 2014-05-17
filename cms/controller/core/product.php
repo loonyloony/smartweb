@@ -125,6 +125,7 @@ class ControllerCoreProduct extends Controller
         $where .= " ORDER BY sortorder ASC";
         
         $rows = $this->model_core_product->getList($where);
+        $this->data['countProduct'] = count($this->model_core_product->getList(" AND sitemapid = '" . $this->request->get['sitemapid'] . "'"));
         
         //load all tags
         $this->data['tags']=$this->model_core_product->getAllTagsProduct();

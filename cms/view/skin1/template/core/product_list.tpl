@@ -57,7 +57,11 @@
                 <input type="button" class="button" name="btnSearch" value="Xem tất cả" onclick="window.location = '?route=module/product&sitemapid=<?php echo $_GET['sitemapid']?>'"/>
             </div>
             
-            
+            <div style="text-align:right; padding:3px; font-weight:bold; font-size:1.3em">
+                <label><?php echo $sum_product ?></label>: 
+                <span><?php echo $countProduct ?></span>
+            </div>
+
             <div class="sitemap treeindex">
             
             	<table class="data-table" cellpadding="0" cellspacing="0">
