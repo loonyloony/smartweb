@@ -64,8 +64,8 @@
                                     <a onclick="elifeupload_one('imagepath','imagepreview')" class="button"><?php echo $button_selectimage ?></a>
                                 </td>
                                 <td>
-                                    <img id="imagepreview" width="300px" imagetype="images/root" src="images/resizepng-300x0/<?php echo $weblink['image']?>" />
-                                    <input type="hidden" id="imagepath" name="imagepath" value="<?php echo $sitemap['image']?>" />
+                                    <img id="imagepreview" width="300px" imagetype="images/root" src="images/resizepng-300x0/<?php echo $sitemap['imagepath']?>" />
+                                    <input type="hidden" id="imagepath" name="imagepath" value="<?php echo $sitemap['imagepath']?>" />
                                 </td>
                             </tr>
                         </table>
