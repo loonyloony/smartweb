@@ -115,10 +115,15 @@ class ControllerElifeSitemap extends Controller
         //Lay danh sach Sitemap
         $this->data['sitemaps'] = $this->model_core_sitemap->getList(SITEID);
         $this->model_core_sitemap->renderTreeView("",$this->data['sitemaps'], "treeicon");
+
         for($i=0;$i<count($this->data['sitemaps']);$i++)
         {
             $this->data['sitemaps'][$i]['previewlink'] = $this->url->getURL($this->data['sitemaps'][$i]['seo_url'], "sitemap", $this->data['sitemaps'][$i]['sitemapid']);
-            
+            $arrChildren = $this->model_core_sitemap->getListByParent( $this->data['sitemaps'][$i]['sitemapid'], SITEID, "");
+            if(count($arrChildren) > 0)
+            {
+                $this->data['sitemaps'][$i]['flg_plus'] = "+";
+            }
             if($this->data['sitemaps'][$i]['status'] == 0)
             {
                 $this->data['sitemaps'][$i]['statustext'] = "<span class='status0'>".$this->language->get("text_status0")."</span>";

@@ -70,6 +70,7 @@ class ModelCoreSitemap extends Model
                 $arrLevel = explode("-",$treelevel);
                 $deep = count($arrLevel) - 2;
                 $data[$i]['treedeep'] = $deep;
+                $data[$i]['parentid'] = $parentid;
                 
                 $this->renderTreeLevel($data[$i]['sitemapid'], $data, $class, $indentwidth, $indenttext, $prefix, $data[$i]['treelevel']);
             }
